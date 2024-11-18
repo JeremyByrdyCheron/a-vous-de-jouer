@@ -1,0 +1,16 @@
+p {
+  color: #0000ff;
+  background-color: #add8e6;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  p {
+    background-color: #ffff00;
+  }
+}
+@media screen and (min-width: 1025px) {
+  p {
+    color: #008000;
+    background-color: #ffa500;
+  }
+}

@@ -1,0 +1,36 @@
+/* on retire le soulignement des liens */
+a{
+    text-decoration: none;
+}
+/* On retire les puces devant les éléments de la nav */
+ul{
+    list-style: none;
+}
+/* on fait disparaître tous les éléments de la liste, sauf l'image du burger */
+#burger ul :not(:first-child) {
+  display: none;
+}
+
+/* réduit la taille de l'image à 25% maximum */
+img {
+  max-width: 25%;
+}
+
+
+@media screen and (min-width: 1024px) {
+/* On fait réapparaitre les éléments de la liste */
+  #burger ul :not(:first-child){
+    display: list-item;
+  }
+  /* On écarte les liens */
+  #burger ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* On fait disparaître l'image du burger*/
+  #burger ul li:first-child {
+    display: none;
+  }
+
+}
